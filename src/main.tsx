@@ -13,6 +13,7 @@
  */
 
 /* ===================== 1. IMPORTS ======================================== */
+import React from 'react'; // required: hooks are referenced as React.useState etc.
 import { createElement as h } from 'react';
 import { createRoot } from 'react-dom/client';
 import { create } from 'zustand';

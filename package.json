@@ -5,7 +5,7 @@
   "description": "Medistream OCMS — AI-Enhanced Outpatient Clinics Management System (Google AI Studio app)",
   "scripts": {
     "dev": "npm run build -- --minify=false && static-server",
-    "build": "esbuild src/main.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --loader:.css=css --define:process.env.API_KEY='\"AIzaSyDtlwN5StPP4cqKR8HqfleB9L_2dGVKKc8\"'",
+    "build": "esbuild src/main.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --loader:.css=css --define:process.env.API_KEY='\"\"'",
     "preview": "npx serve dist -l 3000"
   },
   "dependencies": {

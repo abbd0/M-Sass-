@@ -3,7 +3,7 @@
  * ValidationPipe-equivalent Zod parse -> RPC auth_login -> bcrypt check ->
  * JWT (HS256, iss/aud verified) set in signed httpOnly cookie.
  */
-import { useState } from 'react';
+import React, { useState } from 'react'; // React default import required for React.FormEvent type
 import { LoginDtoSchema, NATIONAL_ID_REGEX } from '../libs/common';
 import { api } from '../services/apiClient';
 import { useAuthStore } from '../stores/authStore';
