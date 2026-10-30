@@ -1,0 +1,21 @@
+{
+  "name": "medistream-ocms-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Medistream OCMS — AI-Enhanced Outpatient Clinics Management System (Google AI Studio app)",
+  "scripts": {
+    "dev": "npm run build -- --minify=false && static-server",
+    "build": "esbuild src/main.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --loader:.css=css --define:process.env.API_KEY='\"AIzaSyDtlwN5StPP4cqKR8HqfleB9L_2dGVKKc8\"'",
+    "preview": "npx serve dist -l 3000"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.8",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2"
+  }
+}
